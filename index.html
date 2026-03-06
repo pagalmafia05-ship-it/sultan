@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '760408266540316');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=760408266540316&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hazi Sultan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1112;
+      --panel:#142728;
+      --card:#18343a;
+      --accent:#00e199;
+      --gold:#f2b600;
+      --cta1:#2db6ff;
+      --cta2:#0a9ef2;
+      --muted:#bfc9cc;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:var(--bg);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      max-width:900px;
+      margin:24px auto;
+      padding:20px;
+    }
+
+    /* Top hero */
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      border-radius:16px;
+      padding:22px;
+      text-align:center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+    .avatar-wrap{
+      width:132px;
+      height:132px;
+      margin:0 auto 12px;
+      border-radius:50%;
+      border:6px solid #f7d34a; /* ring */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      background:linear-gradient(135deg,#6a2,#58a);
+    }
+    .avatar-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+
+    h1{
+      font-size:26px;
+      margin:10px 0 6px;
+      letter-spacing:0.6px;
+      color:var(--gold);
+    }
+    .tag{
+      color:var(--muted);
+      margin-bottom:14px;
+      font-size:14px;
+    }
+
+    .stats{
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      margin:14px 0;
+      flex-wrap:wrap;
+    }
+    .stat{
+      background:rgba(255,255,255,0.03);
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:600;
+      font-size:14px;
+      color:var(--white);
+    }
+
+    .cta{
+      margin-top:14px;
+    }
+    .btn-Start-Now {
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 26px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:16px;
+      text-decoration:none;
+      background:linear-gradient(90deg,var(--cta1),var(--cta2));
+      color:#fff;
+      box-shadow: 0 8px 24px rgba(10,160,242,0.18), inset 0 -2px 6px rgba(0,0,0,0.2);
+    }
+    .btn-Start-Now :active{transform:translateY(1px)}
+
+    /* features */
+    .features{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:12px;
+      margin-top:20px;
+    }
+    .feature{
+      background:rgba(255,255,255,0.03);
+      padding:14px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:600;
+    }
+    .feature .dot{
+      width:28px;height:28px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#00221a;font-weight:700;
+    }
+
+    /* testimonials */
+    .section-title{
+      margin-top:22px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      justify-content:center;
+      color:var(--gold);
+      font-weight:700;
+      font-size:18px;
+    }
+    .testimonials{margin-top:12px;display:flex;flex-direction:column;gap:14px}
+
+    .testimonial{
+      background:var(--card);
+      border-radius:14px;
+      padding:16px;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      position:relative;
+      box-shadow: 0 8px 20px rgba(2,10,12,0.6);
+    }
+    .testimonial::before{
+      content:"";
+      width:8px;
+      background:linear-gradient(180deg,var(--accent),#00c88f);
+      border-radius:8px;
+      position:absolute;
+      left:8px;
+      top:8px;
+      bottom:8px;
+    }
+    .testimonial .content{
+      margin-left:18px; /* leave space for stripe */
+      color: #e9f3f2;
+      font-style:italic;
+      line-height:1.5;
+      font-size:15px;
+    }
+    .testimonial .author{
+      display:block;
+      margin-top:10px;
+      font-weight:700;
+      font-style:normal;
+      color:#fff;
+    }
+
+    /* mobile spacing */
+    @media(min-width:768px){
+      .container{padding:30px}
+      .hero{display:block;padding:28px}
+      .features{grid-template-columns:repeat(3,1fr)}
+      h1{font-size:34px}
+      .avatar-wrap{width:140px;height:140px}
+      .testimonial{padding:20px}
+      .testimonial .content{font-size:16px}
+    }
+
+    /* small helper */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HERO -->
+    <div class="hero" role="banner">
+      <div class="avatar-wrap">
+        <!-- Replace with your avatar image file path -->
+        <img src="images/qr.png" alt="Profile photo">
+      </div>
+
+      <h1>👑 Hazi Sultan 👑</h1>
+      <div class="tag">“Ghar Baithe Halal Investment • Safe Profit Sharing • Weekly Income"</div>
+
+      <div class="stats">
+        <div class="stat">👥 500+ Happy Investors</div>
+        <div class="stat">📈 Proven Halal Investment Model</div>
+        <div class="stat">💰 Low Investment • High Profit Potential</div>
+      </div>
+
+      <div class="cta">
+        <a <!-- Start Now Lead Button -->
+<a class="btn-Start-Now" 
+   href="https://t.me/armanmetaadsexpert"
+   target="_blank"
+   rel="noopener"
+   onclick="fbq('track','Lead');">
+   Start Now
+</a>
+      </div>
+
+      <!-- Features -->
+      <div class="features" style="margin-top:18px">
+        <div class="feature"><div class="dot">✓</div><div>✔ Halal Business Investment System</div></div>
+        <div class="feature"><div class="dot">✓</div><div>✔ Secure & Transparent Process</div></div>
+        <div class="feature"><div class="dot">✓</div><div>✔ Daily / Weekly Profit Sharing</div></div>
+      <div class="feature"><div class="dot">✓</div><div>✔ Beginner Friendly Investment Model</div></div>
+        
+      </div>
+    </div>
+
+    <!-- Testimonials header -->
+    <div class="section-title">Disclaimer</div>
+    <div class="feature"><div class="dot">✓</div><div>Investment me risk hota hai. Profit business performance par depend karta hai</div></div>
+  </html>
